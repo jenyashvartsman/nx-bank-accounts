@@ -43,3 +43,9 @@ Client
 ```
 npm run build:client
 ```
+
+## Graph
+
+```
+npm run graph
+```

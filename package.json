@@ -8,7 +8,8 @@
     "start:client": "nx serve client",
     "build": "nx run-many --parallel --target=build --projects=server,client",
     "build:server": "nx build server",
-    "build:client": "nx build client"
+    "build:client": "nx build client",
+    "graph": "nx graph"
   },
   "private": true,
   "dependencies": {
