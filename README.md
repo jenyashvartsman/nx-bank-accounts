@@ -18,6 +18,12 @@ Server
 npm run start:server
 ```
 
+Client
+
+```
+npm run start:client
+```
+
 ## Build
 
 All
@@ -30,4 +36,10 @@ Server
 
 ```
 npm run build:server
+```
+
+Client
+
+```
+npm run build:client
 ```
