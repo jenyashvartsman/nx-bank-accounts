@@ -2,7 +2,11 @@
   "name": "@nx-bank-accounts/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "npm run start:server",
+    "start:server": "nx serve server",
+    "build:server": "nx build server"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",
