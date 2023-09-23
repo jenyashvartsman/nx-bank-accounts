@@ -1,3 +1,3 @@
-# fake-repository-dtos
+# dtos
 
 This library was generated with [Nx](https://nx.dev).

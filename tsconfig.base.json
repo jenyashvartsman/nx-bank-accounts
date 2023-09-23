@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-bank-accounts/dtos": ["libs/dtos/src/index.ts"],
       "@nx-bank-accounts/fake-repository": [
         "libs/fake-repository/src/index.ts"
       ],
