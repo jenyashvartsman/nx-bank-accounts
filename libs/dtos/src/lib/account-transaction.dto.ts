@@ -1,6 +1,6 @@
 export interface AccountTransactionDto {
   id: string;
-  accountNumber: number;
+  accountNumber: string;
   type: string;
   description: string;
   amount: number;

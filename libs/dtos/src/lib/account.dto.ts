@@ -1,7 +1,7 @@
 export interface AccountDto {
-  accountNumber: number;
+  accountNumber: string;
   userId: string;
   accountName: string;
-  routingNumber: number;
+  routingNumber: string;
   createdAt: Date;
 }
