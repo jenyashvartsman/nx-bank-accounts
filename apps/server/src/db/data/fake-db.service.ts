@@ -104,7 +104,7 @@ export class FakeDbService implements OnApplicationBootstrap {
               type: faker.finance.transactionType(),
               description: faker.finance.transactionDescription(),
               amount: faker.number.float({
-                min: 5,
+                min: -1_000_000,
                 max: 1_000_000,
                 precision: 2,
               }),

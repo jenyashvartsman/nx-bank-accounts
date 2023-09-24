@@ -1,6 +1,6 @@
 import { Controller, Get, NotFoundException, Param } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { UserAddressDto, UserDto } from '@nx-bank-accounts/dtos';
+import { AccountDto, UserAddressDto, UserDto } from '@nx-bank-accounts/dtos';
 import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('users')
@@ -68,5 +68,24 @@ export class UsersController {
     } else {
       throw new NotFoundException(`Could not find user address: ${id}`);
     }
+  }
+
+  @Get(':id/accounts')
+  @ApiOperation({ summary: 'Get all users' })
+  @ApiResponse({
+    status: 200,
+    description: 'All user accounts',
+    type: AccountDto,
+    isArray: true,
+  })
+  @ApiParam({
+    name: 'id',
+    description: 'User ID',
+    required: true,
+    type: String,
+    example: 'b50732e1-a50b-40b3-b787-e0e6d17a4037',
+  })
+  getAllAccounts(@Param('id') id: string): AccountDto[] {
+    return this.usersService.getAllAccounts(id);
   }
 }
