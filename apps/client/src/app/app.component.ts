@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from './core/layout/theme-service/theme-service.service';
 
 @Component({
   selector: 'nx-bank-accounts-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'appsclient';
+  constructor(private readonly themeService: ThemeService) {
+    this.themeService.setDefaultTheme();
+  }
 }

@@ -1,0 +1,19 @@
+.header-wrapper {
+  height: 65px;
+  border-bottom: 1px solid var(--surface-400);
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--app-max-width);
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .header-theme {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

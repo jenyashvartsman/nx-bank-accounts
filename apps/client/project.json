@@ -16,7 +16,21 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/client/tsconfig.app.json",
         "assets": ["apps/client/src/favicon.ico", "apps/client/src/assets"],
-        "styles": ["apps/client/src/styles.css"],
+        "styles": [
+          {
+            "input": "apps/client/src/assets/themes/light.css",
+            "bundleName": "light-theme",
+            "inject": false
+          },
+          {
+            "input": "apps/client/src/assets/themes/dark.css",
+            "bundleName": "dark-theme",
+            "inject": false
+          },
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeicons/primeicons.css",
+          "apps/client/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {

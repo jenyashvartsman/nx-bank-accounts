@@ -1,6 +1,13 @@
-<ul>
-  <li><a routerLink="" routerLinkActive="router-link-active">home</a></li>
-  <li>
-    <a routerLink="user/123" routerLinkActive="router-link-active">user</a>
-  </li>
-</ul>
+<header class="header-wrapper">
+  <div class="header-content">
+    <!-- title -->
+    <h3>NX Bank Accounts</h3>
+
+    <!-- theme -->
+    <p-button
+      icon="pi pi-{{ (isDarkTheme$ | async) ? 'moon' : 'sun' }}"
+      styleClass="p-button-rounded p-button-text"
+      (onClick)="toggleTheme()"
+    ></p-button>
+  </div>
+</header>
